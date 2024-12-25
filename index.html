@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-fr="Seeko - Automatisation et IA" data-en="Seeko - Automation & AI">
+    Seeko - Automatisation et IA
+  </title>
+
+  <!-- Meta pour SEO -->
+  <meta name="description" content="Seeko - Transformez votre entreprise grâce à nos solutions d'automatisation et d'IA." />
+  <meta name="keywords" content="Automatisation, Intelligence Artificielle, PME, Solutions d'entreprise, Power BI, Automatisation des processus">
+
+  <!-- Lien vers la feuille de style -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Polices Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- (Optionnel) Font Awesome pour icônes -->
+  <!-- <script src="https://kit.fontawesome.com/TON_KIT.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+  <!-- Bandeau cookies -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p data-fr="Nous utilisons des cookies pour améliorer votre expérience." 
+       data-en="We use cookies to improve your experience.">
+      Nous utilisons des cookies pour améliorer votre expérience.
+    </p>
+    <div class="cookie-actions">
+      <button class="accept" data-fr="Accepter" data-en="Accept">Accepter</button>
+      <button class="decline" data-fr="Refuser" data-en="Decline">Refuser</button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <nav class="navbar" aria-label="Navigation principale">
+
+      <!-- Nouveau conteneur : logo2 + texte Seeko -->
+      <div class="logo-container">
+        <img src="logo2.webp" alt="Petit logo secondaire" class="logo2" />
+        <span class="logo-text">Seeko</span>
+      </div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+        <li><a href="#about" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+        <li><a href="#services" class="nav-link" data-fr="Services" data-en="Services">Services</a></li>
+        <li><a href="#testimonials" class="nav-link" data-fr="Témoignages" data-en="Testimonials">Témoignages</a></li>
+        <li><a href="#faq" class="nav-link" data-fr="FAQ" data-en="FAQ">FAQ</a></li>
+        <li><a href="#blog" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
+        <li><a href="#process" class="nav-link" data-fr="Process" data-en="Process">Process</a></li>
+        <li><a href="#contact" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+
+      <div class="header-buttons">
+        <button class="lang-btn" id="langToggle">
+          <span class="lang-text" data-fr="FR" data-en="EN">FR</span>
+        </button>
+        <button class="theme-btn" id="themeToggle">
+          <i class="fas fa-adjust"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECTION HERO -->
+  <section class="hero-section" id="hero">
+    <!-- Effet Wave en SVG -->
+    <div class="wave-bg">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#1A2B4E" fill-opacity="1"
+          d="M0,224L30,192C60,160,120,96,180,96C240,96,300,160,360,170.7C420,181,480,139,540,122.7C600,107,660,117,720,138.7C780,160,840,192,900,186.7C960,181,1020,139,1080,112C1140,85,1200,75,1260,64C1320,53,1380,43,1410,37.3L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+
+    <div class="hero-content container scroll-reveal">
+      <!-- Texte à gauche, centré verticalement -->
+      <div class="hero-text">
+        <h1 class="hero-title"
+            data-fr="Simplifiez vos tâches, maximisez votre valeur ajoutée" 
+            data-en="Simplify your tasks, maximize your added value">
+          Simplifiez vos tâches, maximisez votre valeur ajoutée
+        </h1>
+        <p class="hero-subtitle"
+           data-fr="SeeKo aide les entreprises à optimiser leurs processus grâce à des solutions d’automatisation et d’IA."
+           data-en="SeeKo helps businesses optimize their processes with automation and AI solutions.">
+          SeeKo aide les entreprises à optimiser leurs processus grâce à des solutions d’automatisation et d’IA.
+        </p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary" 
+             data-fr="Découvrez nos solutions" data-en="Discover our solutions">
+            Découvrez nos solutions
+          </a>
+          <a href="#contact" class="btn btn-secondary"
+             data-fr="Contactez-nous" data-en="Contact us">
+            Contactez-nous
+          </a>
+        </div>
+      </div>
+
+      <!-- Illustration 3D sur la droite -->
+      <div class="hero-image">
+        <img src="SeeKoa.webp" alt="Illustration SeeKo 3D" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ABOUT -->
+  <section class="about-section scroll-reveal" id="about" aria-label="À propos">
+    <div class="container">
+      <h2 class="section-title"
+          data-fr="À propos de nous" 
+          data-en="About us">
+        À propos de nous
+      </h2>
+      <p class="about-subtitle"
+         data-fr="Nous croyons en l’automatisation et l’IA pour transformer les entreprises."
+         data-en="We believe in automation and AI to transform businesses.">
+        Nous croyons en l’automatisation et l’IA pour transformer les entreprises.
+      </p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-fr="Notre mission est de libérer le potentiel des PME en supprimant les tâches répétitives, afin de se concentrer sur l’innovation et la croissance."
+             data-en="Our mission is to unleash the potential of SMEs by removing repetitive tasks, allowing them to focus on innovation and growth.">
+            Notre mission est de libérer le potentiel des PME en supprimant les tâches répétitives, afin de se concentrer sur l’innovation et la croissance.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>+100</h3>
+            <p data-fr="Clients satisfaits" data-en="Happy clients">Clients satisfaits</p>
+          </div>
+          <div class="stat-card">
+            <h3>+2000</h3>
+            <p data-fr="Processus automatisés" data-en="Automated processes">Processus automatisés</p>
+          </div>
+          <div class="stat-card">
+            <h3>99%</h3>
+            <p data-fr="Taux de satisfaction" data-en="Satisfaction rate">Taux de satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SERVICES -->
+  <section class="services-section" id="services" aria-label="Services">
+    <div class="container">
+      <h2 class="section-title scroll-reveal"
+          data-fr="Nos Services" data-en="Our Services">
+        Nos Services
+      </h2>
+      <div class="services-grid">
+        <div class="service-card scroll-reveal">
+          <h3 data-fr="Automatisation des processus" data-en="Process Automation">
+            Automatisation des processus
+          </h3>
+          <p data-fr="Optimisez vos opérations, réduisez les erreurs humaines et gagnez du temps précieux."
+             data-en="Optimize your operations, reduce human errors, and save valuable time.">
+            Optimisez vos opérations, réduisez les erreurs humaines et gagnez du temps précieux.
+          </p>
+        </div>
+        <div class="service-card scroll-reveal">
+          <h3 data-fr="Master Data Management" data-en="Master Data Management">
+            Master Data Management
+          </h3>
+          <p data-fr="Gestion centralisée et standardisée des données critiques."
+             data-en="Centralized, standardized management of critical data.">
+            Gestion centralisée et standardisée des données critiques.
+          </p>
+        </div>
+        <div class="service-card scroll-reveal">
+          <h3 data-fr="Tableaux de bord Power BI avec l'IA" data-en="Power BI Dashboards with AI">
+            Tableaux de bord Power BI avec l'IA
+          </h3>
+          <p data-fr="Création de visualisations de données en temps réel enrichies par l’IA."
+             data-en="Real-time data visualizations enhanced by AI.">
+            Création de visualisations de données en temps réel enrichies par l’IA.
+          </p>
+        </div>
+        <div class="service-card scroll-reveal">
+          <h3 data-fr="Intégration de l’IA" data-en="AI Integration">
+            Intégration de l’IA
+          </h3>
+          <p data-fr="Solutions d’IA personnalisées pour améliorer les processus métier et l’expérience client."
+             data-en="Custom AI solutions to improve business processes and customer experience.">
+            Solutions d’IA personnalisées pour améliorer les processus métier et l’expérience client.
+          </p>
+        </div>
+        <div class="service-card scroll-reveal">
+          <h3 data-fr="Modélisation financière" data-en="Financial Modeling">
+            Modélisation financière
+          </h3>
+          <p data-fr="Modèles financiers détaillés pour la prise de décision stratégique."
+             data-en="Detailed financial models for strategic decision-making.">
+            Modèles financiers détaillés pour la prise de décision stratégique.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TESTIMONIALS (slider) -->
+  <section class="testimonials-section" id="testimonials" aria-label="Témoignages">
+    <div class="container">
+      <h2 class="section-title scroll-reveal"
+          data-fr="Témoignages" data-en="Testimonials">
+        Témoignages
+      </h2>
+
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <div class="slide scroll-reveal">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                « Grâce à SeeKo, nous avons pu automatiser la majorité de nos processus. Un gain de temps considérable ! »
+              </p>
+              <p class="testimonial-author">— Marc Lemaire, CTO, TechCorp</p>
+            </div>
+          </div>
+          <div class="slide scroll-reveal">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                « Les tableaux de bord IA de SeeKo nous offrent une vision en temps réel. Décisions éclairées garanties ! »
+              </p>
+              <p class="testimonial-author">— Sophie Martin, Directrice Marketing</p>
+            </div>
+          </div>
+          <div class="slide scroll-reveal">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                « Avec leur intégration IA, on a amélioré l’expérience client. Notre satisfaction a grimpé à 95%. »
+              </p>
+              <p class="testimonial-author">— Luc Durand, CEO, FinanceX</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn prev" id="prevBtn" aria-label="Slide précédent">‹</button>
+        <button class="slider-btn next" id="nextBtn" aria-label="Slide suivant">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FAQ -->
+  <section class="faq-section" id="faq" aria-label="FAQ">
+    <div class="container scroll-reveal">
+      <h2 class="section-title" data-fr="FAQ" data-en="FAQ">FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 data-fr="1. Comment l’IA peut-elle aider mon entreprise ?" 
+                data-en="1. How can AI help my business?">
+              1. Comment l’IA peut-elle aider mon entreprise ?
+            </h3>
+          </div>
+          <div class="faq-answer">
+            <p data-fr="L’IA permet d’automatiser les tâches répétitives, d’analyser rapidement de grandes quantités de données et d’améliorer l’expérience client."
+               data-en="AI can automate repetitive tasks, quickly analyze large amounts of data, and enhance the customer experience.">
+              L’IA permet d’automatiser les tâches répétitives, d’analyser rapidement de grandes quantités de données et d’améliorer l’expérience client.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 data-fr="2. Combien de temps faut-il pour mettre en place un projet d’automatisation ?" 
+                data-en="2. How long does it take to implement an automation project?">
+              2. Combien de temps faut-il pour mettre en place un projet d’automatisation ?
+            </h3>
+          </div>
+          <div class="faq-answer">
+            <p data-fr="Tout dépend de la complexité de vos processus. Cela peut aller de quelques semaines pour un workflow simple, à plusieurs mois pour un déploiement global."
+               data-en="It depends on the complexity of your processes. It can range from a few weeks for a simple workflow to several months for a full-scale deployment.">
+              Tout dépend de la complexité de vos processus. Cela peut aller de quelques semaines pour un workflow simple, à plusieurs mois pour un déploiement global.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 data-fr="3. Offrez-vous un support et une maintenance ?" 
+                data-en="3. Do you provide support and maintenance?">
+              3. Offrez-vous un support et une maintenance ?
+            </h3>
+          </div>
+          <div class="faq-answer">
+            <p data-fr="Oui, nous proposons des offres de maintenance et d’assistance adaptées à vos besoins, pour assurer la pérennité de nos solutions."
+               data-en="Yes, we offer maintenance and support packages tailored to your needs to ensure the sustainability of our solutions.">
+              Oui, nous proposons des offres de maintenance et d’assistance adaptées à vos besoins, pour assurer la pérennité de nos solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION BLOG -->
+  <section class="blog-section" id="blog" aria-label="Blog">
+    <div class="container">
+      <h2 class="section-title scroll-reveal" data-fr="Blog" data-en="Blog">Blog</h2>
+      <div class="blog-grid">
+        <article class="blog-card scroll-reveal">
+          <h3 class="blog-title"
+              data-fr="L'Automatisation : Clé de la Compétitivité" 
+              data-en="Automation: The Key to Competitiveness">
+            L'Automatisation : Clé de la Compétitivité
+          </h3>
+          <p class="blog-excerpt"
+             data-fr="Découvrez comment l’automatisation révolutionne la gestion des tâches et booste la productivité."
+             data-en="Learn how automation is revolutionizing task management and boosting productivity.">
+            Découvrez comment l’automatisation révolutionne la gestion des tâches et booste la productivité.
+          </p>
+          <a href="#" class="blog-link"
+             data-fr="Lire la suite" data-en="Read more">
+            Lire la suite
+          </a>
+        </article>
+        <article class="blog-card scroll-reveal">
+          <h3 class="blog-title"
+              data-fr="Power BI et IA : Du Simple Dashboard à l’Insight Intelligent" 
+              data-en="Power BI & AI: From Simple Dashboard to Intelligent Insight">
+            Power BI et IA : Du Simple Dashboard à l’Insight Intelligent
+          </h3>
+          <p class="blog-excerpt"
+             data-fr="Plongez dans l’univers de l’analytique augmentée pour prendre des décisions plus éclairées."
+             data-en="Dive into augmented analytics to make more informed decisions.">
+            Plongez dans l’univers de l’analytique augmentée pour prendre des décisions plus éclairées.
+          </p>
+          <a href="#" class="blog-link"
+             data-fr="Lire la suite" data-en="Read more">
+            Lire la suite
+          </a>
+        </article>
+        <article class="blog-card scroll-reveal">
+          <h3 class="blog-title"
+              data-fr="IA et Expérience Client : Vers un Nouveau Standard" 
+              data-en="AI & Customer Experience: A New Standard">
+            IA et Expérience Client : Vers un Nouveau Standard
+          </h3>
+          <p class="blog-excerpt"
+             data-fr="Comment l’intelligence artificielle transforme chaque point de contact client."
+             data-en="How artificial intelligence transforms every customer touchpoint.">
+            Comment l’intelligence artificielle transforme chaque point de contact client.
+          </p>
+          <a href="#" class="blog-link"
+             data-fr="Lire la suite" data-en="Read more">
+            Lire la suite
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PROCESS (4 étapes) -->
+  <section class="process-section" id="process" aria-label="Processus">
+    <div class="container scroll-reveal">
+      <h2 class="section-title"
+          data-fr="Notre Processus en 4 étapes" data-en="Our 4-Step Process">
+        Notre Processus en 4 étapes
+      </h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3 data-fr="Analyse des besoins" data-en="Needs Analysis">
+            Analyse des besoins
+          </h3>
+          <p data-fr="Nous étudions vos processus actuels et vos objectifs pour définir un plan d’action précis."
+             data-en="We examine your current processes and objectives to define a clear action plan.">
+            Nous étudions vos processus actuels et vos objectifs pour définir un plan d’action précis.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3 data-fr="Conception de la solution" data-en="Solution Design">
+            Conception de la solution
+          </h3>
+          <p data-fr="Nous élaborons une architecture technique et fonctionnelle sur mesure, intégrant l’IA."
+             data-en="We create a tailor-made technical and functional architecture integrating AI.">
+            Nous élaborons une architecture technique et fonctionnelle sur mesure, intégrant l’IA.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3 data-fr="Développement & Intégration" data-en="Development & Integration">
+            Développement & Intégration
+          </h3>
+          <p data-fr="Nous implémentons la solution, assurons la cohérence des données et testons la performance."
+             data-en="We implement the solution, ensure data consistency, and test performance.">
+            Nous implémentons la solution, assurons la cohérence des données et testons la performance.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3 data-fr="Suivi & Optimisation" data-en="Monitoring & Optimization">
+            Suivi & Optimisation
+          </h3>
+          <p data-fr="Nous vous accompagnons pour la maintenance, les mises à jour et l’analyse continue des résultats."
+             data-en="We support you with maintenance, updates, and continuous results analysis.">
+            Nous vous accompagnons pour la maintenance, les mises à jour et l’analyse continue des résultats.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact-section" id="contact" aria-label="Contact">
+    <div class="container scroll-reveal">
+      <h2 class="section-title"
+          data-fr="Contactez-nous" data-en="Contact us">
+        Contactez-nous
+      </h2>
+      <p data-fr="Pour en savoir plus sur nos services, remplissez le formulaire ci-dessous :"
+         data-en="To learn more about our services, fill out the form below:">
+        Pour en savoir plus sur nos services, remplissez le formulaire ci-dessous :
+      </p>
+      
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name" data-fr="Nom :" data-en="Name:">Nom :</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email" data-fr="Adresse Email :" data-en="Email address:">Adresse Email :</label>
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+          <label for="message" data-fr="Message :" data-en="Message:">Message :</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary"
+          data-fr="Envoyer" data-en="Send">
+          Envoyer
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pied de page">
+    <div class="footer-container container">
+      <p class="footer-text">© 2024 Seeko. Tous droits réservés.</p>
+      <div class="footer-social">
+        <!-- Icônes si Font Awesome activé -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="main.js"></script>
+</body>
+</html>
